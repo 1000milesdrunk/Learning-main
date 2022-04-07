@@ -1,0 +1,54 @@
+<!--Border-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>border Tag</title>
+    <style>
+        .dotted{ border-style:dotted; border-width: 5px; border-color: darkgreen; position:absolute;top:0;left:0;right:0;bottom:0; margin: auto; }
+        .dashed{ border-style:dashed; border-width: 5px; color:aqua;}
+        .solid{ border-style:solid; border-width: 5px; border-color:violet; border-radius:20px;}
+        .double{ border-style:double; border-width: 5px;border-color: brown; border-radius: 50px; text-align: center;}
+        .groove{ border-style:groove; border-width: 10px;border-color:rgb(34, 49, 49);}
+        .ridge{ border-style:ridge; border-width: 10px;border-color: blue;}
+        .inset{border-style: inset; border-width: 10px; border-color: crimson;}
+        .outset{border-style: outset;border-width: 10px;border-color: fuchsia;}
+        .border{
+            position:absolute;
+            border-top-style: dashed;
+            border-right-style: dotted;
+            border-bottom-style: double;
+            border-left-style: solid;
+            border-width: 7px;
+
+        }
+        *{
+            margin: auto;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            position: relative;
+         }
+        .short{border-style: double dotted solid dashed;}
+    </style>
+    </head>
+<body style="text-align: center;">
+    <h1 class="dotted">Border Demo</h1>
+    <h1 class="dashed">Border Demo</h1>
+    <h1 class="solid">Border Demo</h1>
+    <h1 class="double">Border Demo</h1>
+    3d borders
+    <h1 class="groove">Border Demo</h1>
+    <h1 class="ridge">Border Demo</h1>
+    <h1 class="inset">Border Demo</h1>
+    <h1 class="outset">Border Demo</h1> 
+    
+    border style
+    <h1 class="border">Border Demo</h1>
+    <h1 class="short">Border Demo</h1>
+</body>
+</html>

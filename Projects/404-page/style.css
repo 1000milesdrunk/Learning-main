@@ -1,0 +1,40 @@
+header{
+    padding: 10px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size:25px;
+    font-weight:bold;
+}
+img{
+    margin-top:10%;
+    width: 50%;
+    height: 70%;
+}
+.content{
+    display: block;
+    font-size: 30px;
+    margin-left: 50%;
+    margin-top: -45%;
+}
+.h2{
+    font-family: 'Inconsolata', monospace;
+    margin-right: 20px;
+    font-weight: 600px;
+}
+.p{
+    margin-right: 100px;
+    font-size: 23px;
+    font-family: 'Inconsolata', monospace;
+    font-weight: 200px;
+}
+input[type="submit"]{
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    height: 60px;
+    width: 200px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 3px 3px 0 0 rgba(255, 8, 8, 0.589);
+    font-family: 'Roboto Condensed'
+    font-weight: 300;
+}

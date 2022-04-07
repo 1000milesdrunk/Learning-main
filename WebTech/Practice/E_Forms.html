@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Forms</title>
+	<script src="E_Forms.js"></script>
+	<style>
+		body{
+			background-image: url(teal.jpg);
+		}
+	.head,.address,.lang{
+			font-size: 20px;
+			border-style:dashed;
+			border-width: 2px;
+			padding:12px;
+			margin:10px;
+		}
+		.address{
+			border-style:dotted;
+			border-radius: 20px;
+		}
+	</style>
+</head>
+<body style="background-color: bisque;">
+	<h1>Registration form</h1>
+	<div class="head">
+	<label for="Name">Name</label><br>
+		<input type="text" placeholder="Enter your Name" id="name"><br>
+		<label>Password</label><br>
+		<input type="password" id="password">
+	</div> 
+	<div class="address">
+		<label>Address:</label> <br>
+		<textarea rows="5" cols="30" name="Address" value="Enter the Address" id="address">
+		</textarea>
+	</div>
+	<div class="lang" style="border-style:dotted"">
+		Select Languages you know <br>
+		<input type="checkbox" name="lang" id="lang" checked>English
+		<input type="checkbox" name="lang" id="lang">Tamil
+		<input type="checkbox" name="lang" id="lang">Telugu
+		<input type="checkbox" name="lang" id="lang">Kannada
+		<input type="checkbox" name="lang" id="lang">Other
+		<br>
+		<br>
+		Select your Gender <br>
+		<input type="radio" name="gender" id="gender">Male		
+		<input type="radio" name="gender" id="gender">Female
+	</div>
+	<div class="lang">
+		Give your Rating <select name="list" id="list" single>
+			<option value="Amazing">5</option>
+			<option value="">4</option>
+			<option value="">3</option>
+			<option value="">2</option>
+			<option value="">1</option>
+		</select>
+	</div>
+	<input type="submit" value="Submit" onclick="submit()">
+	<input type="reset" value="Reset" onclick="reset()">
+	
+	
+</body>
+</html>

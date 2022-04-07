@@ -1,0 +1,42 @@
+#main{
+    background-color: rgba(128, 128, 128, 0.158);
+    margin-top: 0px;
+}
+figure{
+    background-color: aliceblue;
+    padding: 50px;
+    margin: 10px;
+}
+figcaption{
+    /* margin-top: 10px; */
+    margin:auto;
+    font-style: italic;
+}
+li{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+h1{
+    text-align: center;
+}
+.tc{
+    text-align: center;
+    margin-top: -20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    font-style: oblique;
+}
+.mc{
+    text-align: center;
+}
+ul,p{
+    width: 50%;
+    margin: auto;
+}
+.link{
+    width:70%;
+    text-align:center;
+    margin:20px auto;
+    font-size: medium;
+    font-weight:bolder;
+}

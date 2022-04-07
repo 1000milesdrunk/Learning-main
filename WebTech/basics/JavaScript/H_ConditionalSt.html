@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function age() {
+            if (document.getElementById("t1").value>=18) {
+                document.getElementById("print").innerHTML="Eligible for voting"
+                document.write("Eligible to vote");
+                window.alert("Eligile to vote")
+            }
+            else{
+                document.getElementById("print").innerHTML="Not Eligible for voting"
+                document.write("not Eligible to vote")
+                window.alert("Not Eligible to vote")
+            }
+        }
+    </script>
+</head>
+<body>
+    Enter the age: <input type="text" id="t1"><br>
+    <button type="button" onclick="age()">verify</button>
+    <div id="print"></div>
+</body>
+</html>

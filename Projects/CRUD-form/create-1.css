@@ -1,0 +1,45 @@
+body{
+    background:linear-gradient(180deg, rgb(5, 189, 164),white);
+    background-repeat: no-repeat;
+}
+h1{
+    text-align: center;
+}
+label{
+    width: 150px; 
+    margin-left:35%;
+}
+input{
+    width: 20%;
+    margin-right:0;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+.entry{
+
+    margin-top: 20px;
+    display:flex;
+}
+.name::after{
+    content: "*";
+    color:red;
+    display:inline;
+}
+.empno::after{
+    content:"*";
+    color:red;
+
+}
+input[type=submit]{
+    max-width: 250px;
+    padding: 12px 25px;
+    /* position: absolute; */
+    margin-left: 45%;
+    margin-top: 30px;
+}
+input[type=submit]:hover{
+    background:linear-gradient(45deg, skyblue,white);
+    transform:scale(1.1);
+    font-weight: bold;
+}
+

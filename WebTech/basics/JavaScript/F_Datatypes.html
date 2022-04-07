@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a,b,c;
+        document.write("Before Intialization")
+        
+        document.write("<br>Datatype of a is ",typeof a)
+        document.write("<br>Datatype of b is ",typeof b)
+        document.writeln("<br>Datatype of c is ",typeof c)
+        a=10;
+        b=3.14
+        c="Sun";
+        var d=true;
+        var marks=[10,20,30];
+        var student={name:"Sun",marks:50}
+        document.write("<br>After intialization")
+        document.write("<br> value of name:value pair ",student.name," ",student.marks)
+        document.write("<br>Datatype of a is ",typeof a)
+        document.write("<br>Datatype of b is ",typeof b)
+        document.write("<br>Datatype of c is ",typeof c)
+        document.write("<br>Datatype of d is ",typeof d)
+        document.write("<br>Datatype of marks is ",typeof marks)
+        document.write("<br>Datatype of student is ",typeof student)
+        student=null; //null is also an object       
+        document.write("<br>Datatype of student is ",typeof student)
+        //Array out of bounds is taken as undefined marks[3] is undefined
+        document.write("<br>Value of array elements is ",marks[0]," ",marks[1]," ",marks[2]," ",marks[3])
+
+    </script>
+</body>
+</html>

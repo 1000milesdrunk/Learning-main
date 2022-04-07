@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    /* min-width: 480px; */
+}
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding:10px;
+    background:linear-gradient(115deg, rgb(0, 183, 255),rgb(241, 179, 213));
+}
+.container{
+    min-width:480px;
+    max-width:700px;
+    width:100%;
+    background: white;
+    padding: 25px 30px;
+    border-radius:20px;
+}
+.container .title{
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+}
+.container .title::before{
+    content:"";
+    width:200px;
+    height:3px;
+    background:linear-gradient(120deg, rgb(0, 183, 255),rgb(241, 179, 213),white);
+    position:absolute;
+    left:0;
+    bottom: 0;
+}
+.container form .user-input{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px;;
+}
+form .user-input .input-box{
+    margin-bottom:15px;
+    width:calc(100%/2 - 20px)
+}
+.user-input .input-box .details{
+    display:block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.user-input .input-box input{
+    height:2rem;
+    width:100%;
+    border-radius: 5px;
+    border:1px solid #ccc;
+    padding-left: 15px;
+    font-size: 1em;
+}
+.user-input .ad-size{
+    display:flex;
+    justify-content:space-evenly;
+}
+.user-input .ad-size .size{
+    font-weight: 500;
+    width: 30%;  
+    display:flex;
+    padding-right: 45px;
+    align-items: center;
+    justify-content: flex-start; 
+}
+.user-input .ad-size .options{
+    width:100%;
+    max-width:700px;
+    display:flex;
+    align-items: center;
+    padding-right: 10px;
+}
+.ad-size .options input{
+    margin: 10px;
+}
+.user-input .ad-sites{
+    display:flex;
+    flex-wrap: wrap;
+    margin-top:15px;
+}
+.user-input .ad-sites .site-options{
+    font-weight: 500;
+    margin-bottom: 5px;
+    width:100%;
+}
+.user-input .ad-sites .sites{
+    display:flex;
+    justify-content: space-around;
+    align-items: stretch;
+    margin-right:10%;
+    flex-wrap: nowrap;
+    margin-bottom: 15px;
+}
+.user-input .comments .placing{
+    display:block;
+    font-weight: 500;
+}
+.user-input .comments textarea{
+    width:70%;
+    margin-bottom: 15px;
+}
+.user-input .submit-btn input{
+    display:flex;
+    justify-content: center;
+    max-width:700px;
+    width:40vw;
+    height:40px;
+    margin:20px;
+
+}
+

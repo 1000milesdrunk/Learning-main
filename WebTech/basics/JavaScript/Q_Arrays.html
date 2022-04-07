@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Arrays</title>
+</head>
+<body>
+	<h1>
+		Array Methods
+	</h1>
+	<script>
+		var a=[10,20,30,40,50,35]
+		var b=[60,70,80,90,99]
+	document.write("Hello<br>")
+		document.writeln("Join function"+"<br>")
+		document.write(a.join("*")+"<br><br>")
+		
+		var c=["xyz","ghi","def","abc"]
+		document.writeln(c+"<br>")
+
+		document.write("Sorted c <br>")
+		document.write(c.sort()+"<br>")
+		document.writeln(a.sort()+"<br>")
+		
+		document.writeln("<br> array a is reversed<br>")
+		document.write("a= "+a+"<br>")
+		document.write(a.reverse()+"<br>")
+		document.writeln("<br>")
+		
+		document.write("a= "+a+"<br>")
+		document.write("b= "+b+"<br>")
+		//pop deletes the last element
+		document.writeln("pop function<br>")
+		document.writeln(a.pop(1)+"<br>")
+		document.writeln("a after pop<br>")
+		document.write("a= "+a+"<br>")
+		//push adds the element at last and returns the length
+		document.writeln("<br>Push function<br>after pushing length is returned")
+
+		document.writeln(a.push(10)+"<br>")
+		document.write("a= "+a+"<br>")
+
+		//shift deletes the first element and returns the element
+		document.writeln("<br>Shift function<br>")
+		document.writeln(a.shift()+"<br>")
+		document.write("a= "+a+"<br>")
+
+		//unshift adds the element at starting and returns the length
+		document.writeln("<br>Unshift function<br>")
+		document.writeln(a.unshift("50")+"<br>")
+		document.write("a= "+a+"<br>")
+
+		//concat after concat new array of the result is created if needed store it
+		document.writeln("<br>Concat function<br>")
+		document.writeln(a.concat(b)+"<br>")
+		document.writeln("a= "+a+"<br>")
+
+		//splice takes three args(index,no of deletion of elements from index,element/s to add in place of index)
+		document.writeln("<br>splice function<br")
+		document.writeln(a.splice(1,0,"40")+"<br>")
+		document.write("a= "+a+"<br>")
+		document.writeln(a.splice(1,0,"60","70")+"<br>")
+		document.write("a= "+a+"<br>")
+		//at 3rd index 3 following element are removed and 99 is added in that place deleted elements are printed
+		document.writeln(a.splice(3,3,"99")+"<br>")
+		document.write("a= "+a+"<br>")
+
+		//just delete using splice
+		document.writeln(a.splice(4,3)+"<br>")
+		document.write("a= "+a+"<br>")
+		document.write("<br>")
+		document.write("<br>")
+		document.write("<br>")
+
+		document.write("Slice function<br>")
+		var n=[100,200,300,400,500,600,700]
+		document.write("n= "+n+"<br>")
+		//slice doesn't change the original array 
+		//0 to 3 is sliced 
+		document.write(n.slice(0,4)+"<br>")
+		document.write("n= "+n+"<br>")
+		//from 3rd index to last index
+		document.writeln(n.slice(3)+"<br>")
+		document.write("n= "+n+"<br>")
+	</script>
+
+</body>
+</html>

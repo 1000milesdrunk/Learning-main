@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Compare
+        </title>
+        <style>
+            #print{
+               font-size:30px;
+               color: blue; 
+            }
+        </style>
+        <script>
+            function compare()
+            {
+                if(document.getElementById("first").value>document.getElementById("second").value)
+                {
+                    //document.writeln(document.getElementById("first").value," is greater")
+                    document.getElementById("print").innerHTML=document.getElementById('first').value+" is greater"
+                }
+                else if(document.getElementById("first").value<document.getElementById("second").value){
+                    //document.writeln(document.getElementById("second").value," is greater")
+                    document.getElementById("print").innerHTML=document.getElementById('second').value+" is greater"
+                }
+                else
+                {
+                    document.getElementById("print").innerHTML="Both are equal"
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1>
+            Enter the first number:<input type="text" id="first"><br>
+            Enter the Second number:<input type="text" id="second"><br>
+            <button type="button" onclick="compare()">Compare</button>
+        </h1>
+        <div id="print"></div>
+
+    </body>
+
+</html>

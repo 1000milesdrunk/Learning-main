@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Dancing+Script:wght@400;500;600;700&family=Lobster&display=swap');
+*{
+    margin:0;
+    padding:0;
+    /* width:100%; */
+    /* max-width: 900px; */
+    /* min-width:400px; */
+    box-sizing: border-box;
+    /* font-family: 'Beau Rivage', cursive; */
+    /* font-family: 'Dancing Script', cursive; */
+    font-family: 'Lobster', cursive;
+}
+body{
+    width:100%;
+    height:100%;
+    min-width:400px;
+    min-height: 100vh;
+    background:linear-gradient(135deg,rgb(117, 188, 230),rgb(230, 91, 91));
+    background-repeat: no-repeat;
+    padding:20px;
+}
+.heading{
+    padding:10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 2px 2px 0 0 black;
+    padding: 50px;
+    width:80%;
+    margin: auto;
+}
+.container form{
+    width:100%;
+}
+.container .three{
+    display:flex;
+    flex-direction: column;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.container input{
+    width:80%;
+    height: 7vh;
+    font-size: 16px;
+    padding-left: 15px
+}
+.container form .role-option{
+    margin: 20px auto;
+}
+.container form .role-option select{
+    width:70%;
+    height: 7vh;
+    font-size: 16px;
+}
+.container form .set .rad{
+    width:100%;
+}
+.container form .set .rad label{
+    display:inline-flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    margin-left:15px;
+    padding-bottom: 10px;
+}
+.container form .set label input{
+    width:20px;
+    margin-right: 6px;
+}
+.container form .setcheck label{
+    display:inline-flex;
+    align-items: center;
+}
+.container form .cmt .area{
+    width:100%;
+    margin:20px 0   ;
+}
+.container form .cmt .area textarea{
+    width:100%;
+    height:90%;
+    padding: 20px;
+}
+.submit {
+    display:flex;
+    justify-content:center;
+}
+.submit input{
+    box-shadow: 2px 2px 1px 0 black; 
+    background:linear-gradient(135deg,rgb(117, 188, 230),rgb(230, 91, 91));
+    border-radius: 20px;
+    color: white;
+    text-shadow: 2px 0px 2px black;
+}
+.submit input:hover,
+.submit input:focus{
+    animation-name: changing;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes changing {
+    0%{background:linear-gradient(135deg,rgb(117, 188, 230),rgb(255, 88, 88));}
+
+    /* 50%{background: linear-gradient(135deg,rgb(230, 91, 91),rgb(117, 188, 230));
+    transition:all 0.3ms ease;
+    } */
+
+    100%{background:black}
+}

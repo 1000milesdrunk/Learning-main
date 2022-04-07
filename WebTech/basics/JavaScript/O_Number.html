@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Number Object</title>
+</head>
+<body style="font-size:25px;">
+	<script>
+		document.write("<h2>Number Object</h2>")
+		var a=10;
+		var b=new Number(10);
+		document.writeln("a==b : "+(a==b)+"<br>")
+		document.writeln("a===b : "+(a===b)+"<br>")
+		var c=new Number(10);
+		document.writeln("b==c :" +(b==c)+"<br>")
+		document.writeln("b===c : "+(b===c)+"<br>")
+
+		var g=10;
+		document.writeln("<h2>Methods</h2>")
+		document.writeln("Type of g : "+typeof g+"<br>");
+		document.writeln("Converted to string using toString()")
+		g=g.toString();
+		document.writeln("Type of g : "+typeof g+"<br>")
+
+		var f=3132.1432423424
+		document.writeln("toExponential(value) "+f.toExponential(3)+"<br>")
+		document.writeln("toFixed(val) : "+f.toFixed(3)+"<br>")
+		document.writeln("toPrecision(val) : "+f.toPrecision(4))
+
+	</script>
+</body>
+</html>

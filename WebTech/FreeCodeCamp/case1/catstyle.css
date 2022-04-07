@@ -1,0 +1,29 @@
+*{
+    background-color: rgb(36, 2, 59)!important;
+    color: white;
+    text-align: center;
+}
+#title{
+    color: red;
+    font-family: Sofia;
+    border: 1px solid;
+    text-align: center;
+    font-size:30px;
+}
+#title:hover{
+    color:aquamarine;
+}
+img {
+    width: 50%;
+    display: inline;
+}
+img:hover{
+    transform: scale(1.2);
+}
+h2{
+    color: burlywood;
+}
+a:visited {color:aquamarine}
+#photos {
+    
+}

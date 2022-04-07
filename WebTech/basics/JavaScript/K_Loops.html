@@ -1,0 +1,32 @@
+<!--Iterative Statements-->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Iteration</title>
+	<style>
+		h3{
+			font-family:sans-serif;
+			color: indianred;
+		}
+	</style>
+	<script>
+		function loop(n) {
+			var res="";
+			for(var i=1;i<=n;i++)
+			{
+				res+=i+" ";
+				if(i%10==0)
+					res+="<br>";
+			}
+			document.getElementById("print").innerHTML=res
+		}
+	</script>
+</head>
+<body>
+	Enter the Number range from 1 to <input type="text" id="range" >
+	<button type="submit" onclick="loop(document.getElementById('range').value)">Submit</button>
+	<h3 id="print"></h3>
+</body>
+</html>

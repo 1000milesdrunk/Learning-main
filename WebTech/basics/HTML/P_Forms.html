@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <form>
+        <h1>Registration Form</h1>
+        <font size="5">
+        name:<input type="text" value="enter your name" size="15" maxsize="20"/><br>
+        password:<input type="password" /><br>
+        Address:<textarea rows="5" cols="20" name="address" ></textarea>
+        <br>
+        Select languages you know <br>
+        <input type="checkbox" checked/>English
+        <input type="checkbox"/>Tamil
+        <input type="checkbox"/>Hindi
+        <br>
+        Select your Gender <br>
+        <input type="radio" name="gender" checked>Male
+        <input type="radio" name="gender">Female
+        <br>
+        file upload <br>
+        <input type="file" name="file" accept=".jpg,.doc" id=""><br>
+        <input type="image" src="earth.jpeg" alt="earth" width="300px"height=300px onclick="D_Image.html"><br>
+        Give your Rating
+        <select >//mutliple
+            <option value="Amazing" >Amazing</option>
+            <option selected>5</option>
+            <option>4</option>
+            <option value="">3</option>
+            <option value="">2</option>
+            <option value="">1</option>
+        </select>
+        <br>
+        <input type="button" value="Submit">
+        <input type="button" value="Reset">
+        <input type="button" value="Click me">
+        </font>
+    </form>
+</body>
+</html>

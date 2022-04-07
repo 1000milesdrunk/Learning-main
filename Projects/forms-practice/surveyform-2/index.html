@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="heading">
+        <h1>FreeCodeCamp Survey form</h1>
+        <p class="subheading">Thank you for taking the time to help us improve the platform</p>
+    </div>
+    <div class="container">
+        <form action="">
+            <div class="three">
+                <label for="nameid">Name:</label>
+                <input id="nameid" type="text" placeholder="Enter your name" required>
+            </div>
+            <div class="three">
+                <label for="email">Email:</label>
+                <input type="email" placeholder="Enter your email" required>
+            </div>
+            <div class="three">
+                <label for="age">Age:</label>
+                <input type="number" name="" id="" placeholder="Enter your age(optional)" min="1">
+            </div>
+            <div class="role-option">
+                <label for="role" class="l1">Which option describes your current role?</label>
+                <select name="role" id="role">
+                    <option value="disabled" disabled selected>Select current role</option>
+                    <option value="">Student</option>
+                    <option value="">Working</option>
+                    <option value="">Retired</option>
+                </select>
+            </div>
+            <div class="set">
+                <fieldset class="rad">
+                    <legend>Would you like to recommend it to a friend</legend>
+                    <label class="radio"><input type="radio" name="selecting">Definitely</label>
+                    <label class="radio"><input type="radio" name="selecting">Maybe</label>
+                    <label class="radio"><input type="radio" name="selecting">Not sure</label>
+                </fieldset>
+            </div>
+            <div class="setcheck set">
+                <fieldset class="check">
+                    <legend>What to improve ?</legend>
+                    <label for="fe">
+                    <input type="checkbox" name="check" id="fe">
+                        Front end
+                    </label>
+                    <label for="be">
+                    <input type="checkbox" name="check" id="be">
+                        Backend
+                    </label>
+                    <label for="js">
+                    <input type="checkbox" name="check" id="js">
+                        JavaScript
+                    </label>
+                    <label for="ch">
+                    <input type="checkbox" name="" id="ch">
+                        Challenges
+                    </label>
+                    <label for="ac">
+                    <input type="checkbox" name="" id="ac">
+                        Additional courses
+                    </label>
+                </fieldset>
+            </div>  
+            <div class="cmt">
+                <fieldset class="area">
+                    <legend>Any Comments?</legend>
+                    <textarea name="" id="" cols="5" rows="5"></textarea>
+                </fieldset>
+            </div>
+            <div class="submit">
+                <input type="submit" name="" id="">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

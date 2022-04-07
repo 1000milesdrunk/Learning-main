@@ -1,0 +1,35 @@
+<html>
+    <head>
+    <style>
+        *{font-size: 20px;}
+        #text{color: brown;}
+    </style>      
+    </head>
+    <body>
+        <h1>CHANGE THE HTML CONTENT</h1>
+        <h2 id="hcontent">
+            Hello Guest
+        </h2>
+        <h3>Welcome to JavaScript</h3>
+        <button type="button" onclick='document.getElementById("hcontent").innerHTML="Hello Sandeep"'>Sandeep</button>
+        <button type="reset" onclick='document.getElementById("hcontent").innerHTML="Hello Sudharsan" '>Sudharsan</button>
+        <button type="reset" onclick='document.getElementById("hcontent").innerHTML="Hello Guest"'>reset</button>
+
+        <h1>CHANGE IN ATTRIBUTES</h1>
+        <img src="earth.jpeg" alt="Earth" width="100PX" height="100PX" id="image"><br><br>
+        <button type="button" onclick='document.getElementById("image").src="red.jpg"'>Red</button>
+        <button type="button" onclick='document.getElementById("image").src="teal.jpg"'>Teal</button>
+        <button type="button" onclick='document.getElementById("image").src="blue.png" ''>Blue</button>
+        <button type="reset" onclick='document.getElementById("image").src="earth.jpeg"'>Reset</button>
+
+        <h1>CHANGE IN CSS</h1>
+        <h2 id="text" >Intro to JavaScript</h2>
+        <button type="button" onclick='document.getElementById("text").style.color="blue" '>blue</button>
+        <button type="button" onclick='document.getElementById("text").style.color="red"'>red</button>
+
+        <h1>HIDE AND DISPLAY THE CONTENT</h1>
+        <H2 id="hide">THIS WILL DEMONSRATE HIDING AND DISPLAYING CONTENT</H2>
+        <button type="button" onclick='document.getElementById("hide").style.display="none"'>hide</button>
+        <button type="button" onclick='document.getElementById("hide").style.display="block"'>display</button>
+    </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Create Form</title>
+        <link rel="stylesheet" href="create-1.css">
+        <link rel="script" href="create.js">
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <div class="formcheck">
+        <form action="">
+            <div class="entry">
+            <label class="name" for="name">Name:</label>
+            <input type="text" id="nameid" required>
+            </div>
+            <div class="entry">
+            <label class="empno" for="empno">Emp no:</label>
+            <input type="number" id="empno" required>
+            </div>
+            <div class="entry">
+            <label for="dob">Date Of Birth:</label>
+            <input type="date" name="" id="dob">
+            </div>
+            <div class="entry">
+                <label for="company">Company:</label>
+                <input type="text" id="company">
+            </div>
+            <div class="entry">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone">
+            </div>    
+            <div class="entry">
+                <label for="resume">Resume</label>
+                <input type="file" accept=".pdf">
+            </div>
+            <div class="submit">
+                <input type="submit" onclick="table()">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

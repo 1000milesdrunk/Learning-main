@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CatPhotoApp</title>
+    <link rel="stylesheet" href="catstyle.css" type="text/css" />
+  </head>
+  <body>
+    <h1 id="title" title="CatPhotoApp">CatPhotoApp</h1>
+    <main>
+      <section id="photos" class="photos">
+        <h2>Cat Photos</h2>
+        <p>
+          Click here to view more <a
+             href="http://https://freecatphotoapp.com/"
+            >cat photos</a >
+        </p>
+        <figure>
+        <img src="https://bit.ly/fcc-relaxing-cat" alt="A orange cat looking">
+        <figcaption>Orange cat lying on its back
+        </figcaption>
+        </figure>
+       </section>
+      <section>
+        <h2>Cat list</h2>
+        <h3> Things cat love: </h3>
+        <ul>
+            <li>cat nip</li>
+            <li>laser pointer</li>
+            <li>lasagna</li>
+        </ul>
+        <figure>
+            <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="lasagna">
+            <figcaption>lasagna</figcaption>
+        </figure>
+        <figure>
+          <img src="catnip.jpg" alt="catnip">
+          <figcaption>catnip</figcaption>
+        </figure>
+        <figure>
+          <img src="laserpointer.jpg" alt="laser pointer">
+          <figcaption>laser pointer</figcaption>
+        </figure>
+      </section>
+      <section>
+        <h2>Top 3 things cat hate</h2>
+        <ol>
+          <li>flea treatment</li>
+          <li>thunder</li>
+          <li>other cats</li>
+        </ol>
+        <figure>
+          <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Four cats playing in a field">
+          <figcaption>Four cats playing in a field</figcaption>
+        </figure>
+      </section>
+      <section>
+        <h2>Cat form</h2>
+        <form action="https://freecatphotoapp.com/submit-cat-photo">
+          <fieldset>
+            <legend>Is you cat indoor or outdoor</legend>
+            <label><input type="radio" id="indoor" value="indoor" name="indoor-outdoor">Indoor </label>
+            <label><input type="radio" id="outdoor" value="outdoor" name="indoor-outdoor">Outdoor </label>
+          </fieldset>
+          <fieldset>  
+            <legend>Whats your cat's Personality</legend>
+            <label> 
+              <input type="checkbox" name="personality" id="personality" value="loving">Loving
+            </label>
+            <label>
+              <input type="checkbox" name="personality" id="personality" value="lazy">Lazy
+            </label>
+            <label>
+              <input type="checkbox" name="personality" id="personality" value="energetic">Energetic
+            </label>
+          </fieldset>
+          <input type="text" id="caturl"placeholder="Enter cat url"><button type="submit" value="submit">Submit</button> 
+        </form>
+      </section>
+      <footer>
+        <p>
+          No Copywrite reserved
+        </p>
+      </footer>
+    </main>
+  </body>
+</html>
