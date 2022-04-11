@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,8 +8,64 @@
     <title>Add Form</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <div class="container">
+        <div class="title">
+            <h1>Registration form</h1>
+        </div>
+        <!-- TODO:ADD ACTION PAGE FOR FORM -->
+        <form action="#" class="regform">
+            <div class="form">
+                <div class="userinput">
+                    <div class="name">
+                        <label for="name" class="name">Name: <input type="text" id="name" placeholder="Enter your name"
+                                required></label>
+                    </div>
+                    <div class="empno">
+                        <label for="empno" class="empno">Emp No: <input type="number" name="empno" id="empno"
+                                placeholder="Enter your emp no" min="100" required></label>
+                    </div>
+                    <div class="country">
+                        <label for="country" class="country">Country: <input type="text" name="country"
+                                placeholder="Enter your country" id="country" required></label>
+                    </div>
+                    <div class="age">
+                        <label for="age" class="age">Age: <input type="number" name="age" id="age"
+                                placeholder="Enter your Age" min="18" max="56" required></label>
+                    </div>
+                    <div class="phone">
+                        <label for="phone" class="phone">Phone Number: <input type="tel" name="phone" id="phone"
+                                placeholder="Enter your Phone Number" required></label>
+                    </div>
+                    <div class="email">
+                        <label for="email" class="email">Email: <input type="email" name="email" id="email"
+                                required></label>
+                    </div>
+                    <div class="resume">
+                        <label for="resume" class="resume">Resume: <input type="file" class="resume" id="resume"
+                                title="upload your resume" required></label>
+                    </div>
+                    <div class="aadhar">
+                        <label for="aadhar" class="aadhar">Aadhar Number: <input type="number" name="aadhar" id="aadhar"
+                                placeholder="Enter your Aadhar Number"></label>
+                    </div>
+                    <div class="pancard">
+                        <label for="pancard" class="pancard">Pancard Number: <input type="number" name="pancard"
+                                id="pancard"></label>
+                    </div>
+                    <div class="bankacc">
+                        <label for="bankacc" class="bankacc">Bank Account Number: <input type="number" name="bankacc"
+                                id="bankacc"></label>
+                    </div>
+                </div>
+                <div class="submit">
+                    <!-- TODO:ADD ONCLICK ADDRESS -->
+                    <input type="button" value="Submit" onclick="#">
+                </div>
+        </form>
+    </div>
     <script src="scipt.js"></script>
 </body>
+
 </html>
