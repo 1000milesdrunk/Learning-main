@@ -65,7 +65,7 @@ body{
     border-radius: 20px;
 }
 .container .regform .form .userinput div input:focus{
-    border: 3px solid rgba(94, 3, 94, 0.733);
+    border: 3px solid rgba(195, 94, 226, 0.842);
     box-shadow: 1px 2px 0 0 rgba(209, 13, 209, 0.274);
 }
 .submit{
@@ -79,7 +79,8 @@ body{
     font-size: 20px ;
 }
 .container .submit input:hover{
-    background:linear-gradient(135deg,rgb(117, 188, 230),rgb(230, 91, 91));
-    color: white;
-    font-size: 20px;
+    background:linear-gradient(135deg,rgb(215, 239, 253),rgba(226, 152, 201, 0.726));
+    color: indigo;
+    font-weight: 600;
+    /* font-size: 20px; */
 }
