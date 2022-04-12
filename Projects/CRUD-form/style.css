@@ -1,3 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;1,600;1,700;1,800&display=swap'); 
 *{
-    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+
+body{
+    width:100vw;
+    height:100vh;
+    min-width: 480px;
+    background:linear-gradient(135deg,rgb(117, 188, 230),rgb(230, 91, 91));
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    background-color: rgb(255, 255, 255);
+    width:80%;
+    height:100%;
+    background-repeat: no-repeat;
+}
+.container .title{
+    font-size: 20px;
+    font-weight: 700;
+    padding:10px;
+    margin:0 auto;
+    text-align: center;
+}
+.container .form .userinput{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding:10px;
+    margin: 0 auto;
+}
+.container .regform .form .userinput div{
+    display: flex;
+    margin-left: 15%;
+    margin-right: 30px;
+}
+.container .regform .form .userinput div label{
+    display:flex;
+    align-items: center;
+    font-size: 20px;
+    align-items:center;
+    margin-bottom:5px;
+    margin-right: auto;
+    justify-content: center;
+
+}
+.container .regform .form .userinput div input{
+    display: flex;
+    /* margin-left: 15px; */
+    width:70%;
+    height:30px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    padding-left: 15px;
+    border-width:1px;
+    outline:none;
+    border-radius: 20px;
+}
+.container .regform .form .userinput div input:focus{
+    border: 3px solid rgba(195, 94, 226, 0.842);
+    box-shadow: 1px 2px 0 0 rgba(209, 13, 209, 0.274);
+}
+.submit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container .submit input{
+    width:50%;
+    height:45px;
+    font-size: 20px ;
+}
+.container .submit input:hover{
+    background:linear-gradient(135deg,rgb(215, 239, 253),rgba(226, 152, 201, 0.726));
+    color: indigo;
+    font-weight: 600;
+}
+.container .regform .form .userinput div input:valid{
+    border:1px solid green;
+}
+.container .regform .form .userinput div input:-moz-submit-invalid{
+    border: 1px solid red;
+}
+@media(min-width:480px)
+{
+
 }
