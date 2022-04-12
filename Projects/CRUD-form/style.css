@@ -83,6 +83,7 @@ body{
     color: indigo;
     font-weight: 600;
 }
+/* .container .submit input: */
 .container .regform .form .userinput div input:valid{
     border:1px solid green;
 }
@@ -92,6 +93,10 @@ body{
 fieldset{
     padding:20px;
     margin: 10px;
+}
+.table div table thead tr{
+    display: flex;
+    justify-content: space-between;
 }
 @media(min-width:480px)
 {
