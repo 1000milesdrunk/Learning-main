@@ -15,7 +15,7 @@
             <h1>Registration form</h1>
         </div>
         <!-- TODO:ADD ACTION PAGE FOR FORM -->
-        <form action="event:preventDefault() " class="regform" method="post">
+        <form action="" autocomplete="off" class="regform" method="post">
             <div class="form">
                 <div class="userinput">
                     <div class="name">
@@ -61,32 +61,33 @@
                 </div>
                 <div class="submit">
                     <!-- TODO:ADD ONCLICK ADDRESS -->
-                    <input type="submit" value="Submit" onclick="">
+                    <input type="submit" value="Submit">
                 </div>
         </form>
-    </div>
-    
-    <!-- <fieldset method="post" class=table>
-        <div id="write">
-            <table>
-                <thead>
+        <table id="registrationList">
+            <thead>
+                <tr>
+                <div id="stored-data">
                     <td>Name</td>
                     <td>Emp no</td>
                     <td>Country</td>
                     <td>Age</td>
                     <td>Phone Number</td>
                     <td>Email</td>
-                    <td>Aadhar</td>
-                    <td>Pancard</td>
-                    <td>BankAccount</td>
-                </thead>
-                <tbody>
-
-                </tbody>
-            </table>
-        </div>
-    </fieldset> -->
+                    <td>Aadhar Number</td>
+                    <td>Pancard Number</td>
+                    <td>Bank Account</td>
+                    <td></td>
+                </div>
+                </tr>
+            </thead>
+            <tbody>
+                 
+            </tbody>
+        </table>
+    </div>    
     <script src="scipt.js"></script>
+    <script src="homepage.js"></script>
 </body>
 
 </html>
