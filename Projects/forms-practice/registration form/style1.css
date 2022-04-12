@@ -65,10 +65,45 @@ body{
     outline-color: invert;
 }
 .user-details .input-box input:focus{
-    box-shadow: 1px 1px 0 0 black;
+    box-shadow: 2px 2px 1px 0px black;
 }   
-
-
+.container form .button{
+    display:flex;
+    justify-content: center;
+    padding: 10px;
+}
+ .button input{
+     width:80%;
+     height: 3em;
+     background:linear-gradient(95deg,skyblue,pink);
+     color:black;
+     font-size:18px;
+     font-weight: 500;
+    }
+    .button input:hover{
+        background:linear-gradient(5deg,skyblue,pink);
+        transform: scale(1.1);
+ }
+@media(max-width:600px){
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+    .container{
+        max-width:100%; 
+    }
+    form .user-details .input-box{
+        margin-bottom:10px;
+        width:100%;
+    }
+    .container form .user-details{
+        max-height:300px;
+        overflow-y: scroll;
+    }
+    .user-details::-webkit-scrollbar{
+        width:5px;
+    }
+}
 
 
 
