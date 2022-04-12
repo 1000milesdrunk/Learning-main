@@ -82,5 +82,14 @@ body{
     background:linear-gradient(135deg,rgb(215, 239, 253),rgba(226, 152, 201, 0.726));
     color: indigo;
     font-weight: 600;
-    /* font-size: 20px; */
+}
+.container .regform .form .userinput div input:valid{
+    border:1px solid green;
+}
+.container .regform .form .userinput div input:-moz-submit-invalid{
+    border: 1px solid red;
+}
+@media(min-width:480px)
+{
+
 }
