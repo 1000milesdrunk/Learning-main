@@ -89,6 +89,10 @@ body{
 .container .regform .form .userinput div input:-moz-submit-invalid{
     border: 1px solid red;
 }
+fieldset{
+    padding:20px;
+    margin: 10px;
+}
 @media(min-width:480px)
 {
 

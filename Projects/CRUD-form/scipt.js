@@ -21,4 +21,13 @@
     localStorage.setItem("phone",phone);
     localStorage.setItem("email",email);
     localStorage.setItem("aadhar",aadhar);
+
+
+    // for(let i=0;i<localStorage.length;i++)
+    // {
+    //     const key=localStorage.key(i);
+    //     const value=localStorage.getItem(key);
+
+    //     write.innerHTML('${key}:${value}</br>');
+    // }
 } 
