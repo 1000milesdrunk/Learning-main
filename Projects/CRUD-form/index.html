@@ -15,7 +15,7 @@
             <h1>Registration form</h1>
         </div>
         <!-- TODO:ADD ACTION PAGE FOR FORM -->
-        <form action="" autocomplete="off" class="regform" method="post">
+        <form onsubmit="onFormSubmit()" autocomplete="off" class="regform" method="post">
             <div class="form">
                 <div class="userinput">
                     <div class="name">
@@ -61,10 +61,10 @@
                 </div>
                 <div class="submit">
                     <!-- TODO:ADD ONCLICK ADDRESS -->
-                    <input type="submit" value="Submit">
+                    <input type="submit" value="Submit" onclick="location.href='./homepage.html'">
                 </div>
         </form>
-        <table id="registrationList">
+        <!-- <table id="registrationList">
             <thead>
                 <tr>
                 <div id="stored-data">
@@ -84,7 +84,7 @@
             <tbody>
                  
             </tbody>
-        </table>
+        </table> -->
     </div>    
     <script src="scipt.js"></script>
     <script src="homepage.js"></script>
