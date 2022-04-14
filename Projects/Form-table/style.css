@@ -96,7 +96,10 @@ fieldset{
     white-space: nowrap;
 }
 tr td:hover{
-    /* overflow-wrap: break-word; */
-    /* display: contents; */
-    display:table-row-group;
+    display: contents;
+   display:table-row;
+}
+
+input:required:empty{
+    border: 2px solid red;
 }

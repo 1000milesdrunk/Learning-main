@@ -7,7 +7,7 @@
     <title>Registration Form</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload="init()">
     <div class="container">
         <div class="header">Registration Form</div>
         <div class="main">
@@ -15,23 +15,23 @@
                 <form action="#">
                     <fieldset>
                         <label for="firstname">First Name:</label>
-                        <input type="text" name="" id="firstname">
+                        <input type="text" name="" id="firstname" required>
                     </fieldset>
                     <fieldset>
                         <label for="lastname">Last Name:</label>
-                        <input type="text" name="" id="lastname">
+                        <input type="text" name="" id="lastname" required>
                     </fieldset>
                     <fieldset>
                         <label for="phone">Phone number:</label>
-                        <input type="tel" name="" id="phone">
+                        <input type="tel" name="" id="phone" required>
                     </fieldset>
                     <fieldset>
                         <label for="email">Email:</label>
-                        <input type="email" name="" id="email">
+                        <input type="email" name="" id="email" required>
                     </fieldset>
                     <fieldset>
-                        <label for="dob">Date of Birth:</label>
-                        <input type="date" name="" id="dob">
+                        <label for="dob" title="YYYY/MM/DD">Date of Birth:</label>
+                        <input type="date" name="" id="dob" title="YYYY/MM/DD" required>
                     </fieldset>
                     <button onclick=onFormSubmit() id="submitform">Submit</button>
                 </form>
