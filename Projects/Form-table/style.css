@@ -18,6 +18,9 @@ body{
     width:1000px;
     min-height:40px;
     float:left;   
+    font-weight: 700;
+    font-size: 2em;
+    text-align: center;
 }
 .main{
     display:block;
