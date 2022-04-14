@@ -42,3 +42,38 @@ body{
     width: 1000px;
     float:left;
 }
+.main .regform form{
+    /* background: rgb(233, 233, 243); */
+    margin: 20px auto;
+    padding:10px;
+}
+.main .regform form fieldset{
+    margin:20px auto;
+    padding:10px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+label{
+    display: block;
+    float:left;
+    width:30%;
+}
+input{
+    width:200px;
+    height:25px;
+    float:left;
+}
+button{
+    display: block;
+    width: 150px;
+    height: 2.5em;
+    float: right;
+    /* margin-top: 10px; */
+}
+button:hover{
+    background-color: blanchedalmond;
+}
+fieldset{
+    border:none;
+}
