@@ -12,7 +12,7 @@
         <div class="header">Registration Form</div>
         <div class="main">
             <div class="regform">
-                <form action=TODO:add action>
+                <form action="#">
                     <fieldset>
                         <label for="firstname">First Name:</label>
                         <input type="text" name="" id="firstname">
@@ -33,12 +33,36 @@
                         <label for="dob">Date of Birth:</label>
                         <input type="date" name="" id="dob">
                     </fieldset>
-                    <button onclick=TODO:enter functionname>Submit</button>
+                    <button onclick=onFormSubmit() id="submitform">Submit</button>
                 </form>
             </div>
-            <div class="regtable">TODO:create table</div>
+            <div class="regtable">
+                <table id="tabledata">
+                    <thead>
+                        <tr>
+                            <th>First name</th>
+                            <th>Last name</th>
+                            <th>Phone</th>
+                            <th>Email</th>
+                            <th>Date of Birth</th>
+                            <th>Change</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- <tr>
+                            <td>adsfsdf</td>
+                            <td>qweadd</td>
+                            <td>123123123</td>
+                            <td>specvsdfsd@fhdk.com</td>
+                            <td>11/06/1996</td>
+                            <td>edit delete</td>
+                        </tr> -->
+                    </tbody>
+                </table>
+            </div>
         </div>
-        <div class="footer">TODO:footer</div>
+        <div class="footer">written by ...</div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

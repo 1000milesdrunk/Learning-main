@@ -27,13 +27,13 @@ body{
 }
 .main .regform{
     background:pink;
-    width:50%;
+    width:35%;
     min-height: 90vh;
     float:left;
 }
 .main .regtable{
     background:burlywood;
-    width:50%;
+    width:65%;
     height:90vh;
     float:left;
 }
@@ -76,4 +76,27 @@ button:hover{
 }
 fieldset{
     border:none;
+}
+.regtable table{
+    border:1px solid black;
+    border-collapse: collapse;
+    margin:20px auto;
+    width:95%;
+    /* max-width: 100px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap; */
+}
+.regtable table tr,td,th{
+    border: 1px solid black;
+    padding:4px;
+    max-width: 100px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+tr td:hover{
+    /* overflow-wrap: break-word; */
+    /* display: contents; */
+    display:table-row-group;
 }
