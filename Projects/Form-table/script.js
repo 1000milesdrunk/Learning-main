@@ -1,6 +1,10 @@
 function init(){
     if(localStorage.firstname){
         document.getElementById("firstName").value=localStorage.firstname;
+        document.getElementById("lastname").value=localStorage.lastname;
+        document.getElementById("phone").value=localStorage.phoneNo
+        document.getElementById("email").value=localStorage.emailId
+        document.getElementById("dob").value=localStorage.dOB
     }
     else{
         alert("Input not entered please check the input")
