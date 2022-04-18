@@ -9,6 +9,11 @@ function init(){
     else{
         alert("Input not entered please check the input")
     }
+
+    let detailsArray=[];
+    var detailsObj={
+        
+    }
 }
 function onFormSubmit(){
     tableLoading();

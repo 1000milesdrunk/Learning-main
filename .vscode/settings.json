@@ -3,10 +3,13 @@
         "dobcell",
         "firstname",
         "formdata",
+        "headerbar",
         "lastname",
+        "leftbar",
         "newrow",
         "regform",
         "regtable",
+        "rightbar",
         "tabledata"
     ]
 }
