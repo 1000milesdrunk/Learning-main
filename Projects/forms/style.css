@@ -24,9 +24,10 @@ input,select{
     margin-top: 5px;
 }
 table{
-    width:420px;
+    /* display:grid; */
+    width:90%;
     border-collapse: collapse;
-    margin: 20px;
+    margin:20px auto;
 }
 th{
     background:orange; 
@@ -34,37 +35,51 @@ th{
 th,td{
     border:2px solid black;
     padding:10px;
+    /* max-width:50%; */
+
 }
 fieldset{
     border:none;
 }
+/* table.regform 
+{
+     table-layout:fixed; 
+}
+table.regform td {
+     overflow: hidden; 
+} */
 button{
     background:red;
-    width: 100px;
+    width: 50px;
     height:30px;
+    color: white;
+}
+.actionbutton{
     float:right;
+    background:red;
+    width:100px;
 }
 label{
-    display:block;
-    width:450px;
+    display:inline-block;
+    width:150px;
 }
 .headerbar.top{
-    background:#033;
+    background:rgb(33, 59, 59);
     min-height: 100px;
 }
 .headerbar.bottom{
-    background:#330;
+    background:rgb(75, 75, 40);
     min-height:60px;
 }
 .leftbar{
     width:600px;
-    background:#099;
+    background:rgba(11, 146, 45, 0.664);
     min-height: 600px;
     float:left;
 }
 .rightbar{
     width:600px;
-    background:#ccf;
+    background:rgba(9, 102, 79, 0.411);
     min-height: 600px;
     float:left;
     text-align: center;

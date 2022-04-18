@@ -29,6 +29,10 @@
                 <input type="email" placeholder="Enter your email id" id="email">
                 </fieldset>
                 <fieldset>
+                    <label for="age">Age</label>
+                    <input type="number" min="18" max="100" placeholder="Enter your Age">
+                </fieldset>
+                <fieldset>
                     <label for="country">Country</label>
                     <select name="" id="country">
                         <option value="India">India</option>
@@ -39,8 +43,8 @@
                 </fieldset>
                 <fieldset>
                     <label for="submit">&nbsp;</label>
-                    <button id="submit" onclick="onRegisterPressed()">Register</button>
-                    <button id="clear" onclick="onClearPressed()">Clear</button>
+                    <button class="actionbutton" id="submit" onclick="onRegisterPressed()">Register</button>
+                    <button class="actionbutton" id="clear" onclick="onClearPressed()">Clear</button>
                 </fieldset>
             </div> 
         </aside>    
@@ -52,6 +56,7 @@
                         <th>Last Name</th>
                         <th>Phone Number</th>
                         <th>Email</th>
+                        <th>Age</th>
                         <th>Country</th>
                         <th>Action</th>
                     </tr>
