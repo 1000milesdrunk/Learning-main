@@ -1,6 +1,7 @@
 body{
     margin:0;
-    font-family: sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:18px;
 }
 header,footer,aside{
     display:block;
@@ -24,30 +25,35 @@ input,select{
     margin-top: 5px;
 }
 table{
-    /* display:grid; */
     width:90%;
     border-collapse: collapse;
     margin:20px auto;
 }
+
+table tr,td,th{
+    height:25px;
+    max-width: 100px;
+    table-layout: fixed ;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+
 th{
     background:orange; 
 }
 th,td{
     border:2px solid black;
     padding:10px;
-    /* max-width:50%; */
-
+}
+/* TODO:change hover state only for overflown elements */
+td:hover{
+    overflow:visible;
+    display:contents;
 }
 fieldset{
     border:none;
 }
-/* table.regform 
-{
-     table-layout:fixed; 
-}
-table.regform td {
-     overflow: hidden; 
-} */
 button{
     background:red;
     width: 50px;
@@ -55,9 +61,13 @@ button{
     color: white;
 }
 .actionbutton{
-    float:right;
+    /* float:left; */
+    /* display:flex;
+    flex-wrap:nowrap;
+    flex-direction: row; */
     background:red;
-    width:100px;
+    width:90px;
+    display:inline-block;
 }
 label{
     display:inline-block;
@@ -65,20 +75,20 @@ label{
 }
 .headerbar.top{
     background:rgb(33, 59, 59);
-    min-height: 100px;
+    min-height: 60px;
 }
 .headerbar.bottom{
     background:rgb(75, 75, 40);
-    min-height:60px;
+    min-height:30px;
 }
 .leftbar{
-    width:600px;
+    width:30%;
     background:rgba(11, 146, 45, 0.664);
     min-height: 600px;
     float:left;
 }
 .rightbar{
-    width:600px;
+    width:70%;
     background:rgba(9, 102, 79, 0.411);
     min-height: 600px;
     float:left;

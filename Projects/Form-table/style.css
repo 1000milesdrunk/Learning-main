@@ -95,9 +95,9 @@ fieldset{
     text-overflow:ellipsis;
     white-space: nowrap;
 }
-tr td:hover{
-    display: contents;
-   display:table-row;
+tr td:content:hover{
+    display:table-row;
+    /* display:ruby-text; */
 }
 
 /* input:required:empty{

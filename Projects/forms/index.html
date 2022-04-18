@@ -21,7 +21,7 @@
                 <input type="text" placeholder="Enter last name" id="lastname">
                 </fieldset>
                 <fieldset>
-                <label for="phone">Phone Number</label>
+                <label for="phone">Phone</label>
                 <input type="tel" placeholder="Enter your Phone number" id="phone">
                 </fieldset>
                 <fieldset>
@@ -30,11 +30,12 @@
                 </fieldset>
                 <fieldset>
                     <label for="age">Age</label>
-                    <input type="number" min="18" max="100" placeholder="Enter your Age">
+                    <input id=age type="number" min="18">
                 </fieldset>
                 <fieldset>
                     <label for="country">Country</label>
                     <select name="" id="country">
+                        <option value="" selected hidden>Select your country</option>
                         <option value="India">India</option>
                         <option value="America">America</option>
                         <option value="Africa">Africa</option>
@@ -42,7 +43,7 @@
                     </select>
                 </fieldset>
                 <fieldset>
-                    <label for="submit">&nbsp;</label>
+                    <!-- <label for="submit">&nbsp;</label> -->
                     <button class="actionbutton" id="submit" onclick="onRegisterPressed()">Register</button>
                     <button class="actionbutton" id="clear" onclick="onClearPressed()">Clear</button>
                 </fieldset>
@@ -54,7 +55,7 @@
                     <tr>
                         <th>First Name</th>
                         <th>Last Name</th>
-                        <th>Phone Number</th>
+                        <th>Phone</th>
                         <th>Email</th>
                         <th>Age</th>
                         <th>Country</th>

@@ -1,8 +1,16 @@
 var userArray = [];
 var selectedIndex=-1;
 
+function formDataCheck(){
+    if((document.getElementById("firstname").value==="")||(document.getElementById("lastname").value==="")||(document.getElementById("phone").value==="")||(document.getElementById("email").value==="")||(document.getElementById("age").value==="")||(document.getElementById("country").value===""))
+    {
+        
+    }
+}
+
 function onRegisterPressed()
 {
+   
     var firstName=document.getElementById("firstname").value;
     var lastName=document.getElementById("lastname").value;
     var phone=document.getElementById("phone").value;
@@ -20,7 +28,7 @@ function onRegisterPressed()
         userArray.splice(selectedIndex,1,userObj);
     }
     
-    // console.log(userArray);
+    console.log(userArray);
     
     localStorage.userDetails=JSON.stringify(userArray);
 
@@ -54,10 +62,12 @@ function onClearPressed(){
     document.getElementById("lastname").value="";
     document.getElementById("phone").value="";
     document.getElementById("email").value="";
+    document.getElementById("age").value=null;
+    document.getElementById("country").value=null;
     document.getElementById("submit").innerHTML='Register';
 }
 
-function prepareTableCell(index,firstName,lastName,phone,email,country)
+function prepareTableCell(index,firstName,lastName,phone,email,age,country)
 {
     if(lastName!==""){
 
@@ -77,7 +87,7 @@ function prepareTableCell(index,firstName,lastName,phone,email,country)
         emailCell.innerHTML=email;
         ageCell.innerHTML=age;
         countryCell.innerHTML=country;
-        actionCell.innerHTML='<button class="actionbutton" onclick="onEditPressed('+index+')">Edit</button><br/><button class="actionbutton" onclick="deleteTableRow('+index+')">Delete</button>';
+        actionCell.innerHTML='<button onclick="onEditPressed('+index+')">Edit</button><br/><button onclick="deleteTableRow('+index+')">Delete</button>';
     }
     else{
         var table=document.getElementById("tablerows");
