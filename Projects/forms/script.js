@@ -10,7 +10,7 @@ function init(){
             var phone=userArray[i].phone;
             var email=userArray[i].email;
             var country=userArray[i].country;
-            prepareTableCell(firstName,lastName,phone,email,country);
+            prepareTableCell(i,firstName,lastName,phone,email,country);
             //can do it in a single line by directly using it
             // prepareTableCell(userArray[i].firstname,userArray[i].lastname,userArray[i].phone,userArray[i].email,userArray[i].country);
         }
@@ -42,7 +42,12 @@ function onRegisterPressed(){
     
 }
 
-function prepareTableCell(firstName,lastName,phone,email,country){
+function deleteTableRow(index){
+    var table=document.getElementById("regtable");
+    table.deleteRow(index);
+}
+
+function prepareTableCell(index,firstName,lastName,phone,email,country){
     if(lastName!==""){
 
         var table=document.getElementById("regtable");
@@ -52,12 +57,13 @@ function prepareTableCell(firstName,lastName,phone,email,country){
         var phoneCell=row.insertCell(2);
         var emailCell=row.insertCell(3);
         var countryCell=row.insertCell(4);
-        
+        var actionCell=row.insertCell(5);
         firstNameCell.innerHTML=firstName;
         lastNameCell.innerHTML=lastName;
         phoneCell.innerHTML=phone;
         emailCell.innerHTML=email;
         countryCell.innerHTML=country;
+        actionCell.innerHTML='<button>Edit</button><br/><button onclick="deleteTableRow('+index+')">Delete</button>';
     }
     else{
         var table=document.getElementById("regtable");
@@ -66,11 +72,13 @@ function prepareTableCell(firstName,lastName,phone,email,country){
         var phoneCell=row.insertCell(1);
         var emailCell=row.insertCell(2);
         var countryCell=row.insertCell(3);
+        var actionCell=row.insertCell(5);
         
         firstNameCell.innerHTML=firstName;
         firstNameCell.colSpan=2;
         phoneCell.innerHTML=phone;
         emailCell.innerHTML=email;
         countryCell.innerHTML=country;
+        actionCell.innerHTML='<button>Edit</button><br/><button onclick="deleteTableRow()">Delete</button>';
     }
 }
