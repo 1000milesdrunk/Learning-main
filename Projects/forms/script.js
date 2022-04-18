@@ -54,6 +54,17 @@ function onClearPressed(){
     document.getElementById("lastname").value="";
     document.getElementById("phone").value="";
     document.getElementById("email").value="";
+    document.getElementById("submit").innerHTML='Register';
+}
+
+function onEditPressed(index){
+    var userObj=userArray[index];
+    document.getElementById("firstname").value=userObj.firstname;
+    document.getElementById("lastname").value=userObj.lastname;
+    document.getElementById("phone").value=userObj.phone;
+    document.getElementById("email").value=userObj.email;
+    document.getElementById("country").value=userObj.country;
+    document.getElementById("submit").innerHTML='Update';
 }
 
 function prepareTableCell(index,firstName,lastName,phone,email,country)
@@ -74,7 +85,7 @@ function prepareTableCell(index,firstName,lastName,phone,email,country)
         phoneCell.innerHTML=phone;
         emailCell.innerHTML=email;
         countryCell.innerHTML=country;
-        actionCell.innerHTML='<button>Edit</button><br/><button onclick="deleteTableRow('+index+')">Delete</button>';
+        actionCell.innerHTML='<button onclick="onEditPressed('+index+')">Edit</button><br/><button onclick="deleteTableRow('+index+')">Delete</button>';
     }
     else{
         var table=document.getElementById("tablerows");
