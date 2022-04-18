@@ -62,13 +62,8 @@ button{
     color: white;
 }
 .actionbutton{
-    /* float:left; */
-    /* display:flex;
-    flex-wrap:nowrap;
-    flex-direction: row; */
     background:red;
     width:90px;
-    /* display:inline-block; */
 }
 label{
     display:inline-block;
@@ -94,4 +89,18 @@ label{
     min-height: 600px;
     float:left;
     text-align: center;
+}
+
+.form-control{
+    position: relative;
+    margin:10px;
+    padding: 20px;
+}
+
+.form-control small{
+    margin-left:25px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
 }

@@ -12,29 +12,35 @@
         <header class="headerbar top"><h1>Registration form</h1></header>
         <aside class="leftbar">
             <div>
-                <fieldset>
+                <fieldset class="form-control">
                 <label for="firstname">First Name</label>
                 <input type="text" placeholder="Enter your first name" id="firstname" required>
+                <small>Error message</small>
                 </fieldset>
-                <fieldset>
+                <fieldset class="form-control">
                 <label for="lastname">Last Name</label>
                 <input type="text" placeholder="Enter last name" id="lastname" required>
+                <small>Error message</small>
                 </fieldset>
-                <fieldset>
+                <fieldset class="form-control">
                 <label for="phone">Phone</label>
                 <input type="tel" placeholder="Enter your Phone number" id="phone" required>
+                <small>Error message</small>
                 </fieldset>
-                <fieldset>
+                <fieldset class="form-control">
                 <label for="email">Email</label>
                 <input type="email" placeholder="Enter your email id" id="email" required>
+                <small>Error message</small>
                 </fieldset>
-                <fieldset>
+                <fieldset class="form-control">
                     <label for="age">Age</label>
                     <input id=age type="number" min="18" required>
+                    <small>Error message</small>
                 </fieldset>
-                <fieldset>
+                <fieldset class="form-control">
                     <label for="country">Country</label>
                     <select name="" id="country" required>
+                        <small>Error message</small>
                         <option value="" selected hidden>Select your country</option>
                         <option value="India">India</option>
                         <option value="America">America</option>
