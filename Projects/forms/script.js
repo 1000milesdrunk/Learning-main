@@ -1,4 +1,5 @@
 var userArray = [];
+var selectedIndex=-1;
 
 function init(){
     document.getElementById("tablerows").innerHTML="";
@@ -28,10 +29,17 @@ function onRegisterPressed()
 
     var userObj={firstname:firstName,lastname:lastName,phone:phone,email:email,country:country};
 
-    userArray.push(userObj);
-
+    if(selectedIndex=== -1)
+    {
+        userArray.push(userObj);
+        
+    }
+    else{
+        userArray.splice(selectedIndex,1,userObj);
+    }
+    
     // console.log(userArray);
-
+    
     localStorage.userDetails=JSON.stringify(userArray);
 
     init();
@@ -50,6 +58,7 @@ function deleteTableRow(index){
 }
 
 function onClearPressed(){
+    selectedIndex=-1;
     document.getElementById("firstname").value="";
     document.getElementById("lastname").value="";
     document.getElementById("phone").value="";
@@ -57,7 +66,9 @@ function onClearPressed(){
     document.getElementById("submit").innerHTML='Register';
 }
 
+
 function onEditPressed(index){
+    selectedIndex=index;
     var userObj=userArray[index];
     document.getElementById("firstname").value=userObj.firstname;
     document.getElementById("lastname").value=userObj.lastname;
