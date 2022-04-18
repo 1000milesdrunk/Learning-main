@@ -10,6 +10,7 @@
         "regform",
         "regtable",
         "rightbar",
-        "tabledata"
+        "tabledata",
+        "tablerows"
     ]
 }
