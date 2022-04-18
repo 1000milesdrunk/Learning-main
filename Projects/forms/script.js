@@ -36,13 +36,8 @@ function onRegisterPressed()
 
     init();
     // prepareTableCell(firstName,lastName,phone,email,country);
-        
-    //clear fields
-    document.getElementById("firstname").value="";
-    document.getElementById("lastname").value="";
-    document.getElementById("phone").value="";
-    document.getElementById("email").value="";
     
+    onClearPressed();
 }
 
 function deleteTableRow(index){
@@ -52,6 +47,13 @@ function deleteTableRow(index){
     userArray.splice(index,1);
     localStorage.userDetails=JSON.stringify(userArray);
     init();
+}
+
+function onClearPressed(){
+    document.getElementById("firstname").value="";
+    document.getElementById("lastname").value="";
+    document.getElementById("phone").value="";
+    document.getElementById("email").value="";
 }
 
 function prepareTableCell(index,firstName,lastName,phone,email,country)
