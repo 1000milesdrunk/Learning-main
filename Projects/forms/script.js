@@ -1,3 +1,22 @@
+var userArray = [];
+
+function init(){
+    if(localStorage.userDetails)
+    {
+        userArray=JSON.parse(localStorage.userDetails);
+        for(var i=0;i<userArray.length;i++){
+            var firstName=userArray[i].firstname;
+            var lastName=userArray[i].lastname;
+            var phone=userArray[i].phone;
+            var email=userArray[i].email;
+            var country=userArray[i].country;
+            prepareTableCell(firstName,lastName,phone,email,country);
+            //can do it in a single line by directly using it
+            // prepareTableCell(userArray[i].firstname,userArray[i].lastname,userArray[i].phone,userArray[i].email,userArray[i].country);
+        }
+    }
+}
+
 function onRegisterPressed(){
     var firstName=document.getElementById("firstname").value;
     var lastName=document.getElementById("lastname").value;
@@ -5,6 +24,25 @@ function onRegisterPressed(){
     var email=document.getElementById("email").value;
     var country=document.getElementById("country").value;
 
+    var userObj={firstname:firstName,lastname:lastName,phone:phone,email:email,country:country};
+
+    userArray.push(userObj);
+
+    // console.log(userArray);
+
+    localStorage.userDetails=JSON.stringify(userArray);
+
+    prepareTableCell(firstName,lastName,phone,email,country);
+        
+    //clear fields
+    document.getElementById("firstname").value="";
+    document.getElementById("lastname").value="";
+    document.getElementById("phone").value="";
+    document.getElementById("email").value="";
+    
+}
+
+function prepareTableCell(firstName,lastName,phone,email,country){
     if(lastName!==""){
 
         var table=document.getElementById("regtable");
@@ -35,11 +73,4 @@ function onRegisterPressed(){
         emailCell.innerHTML=email;
         countryCell.innerHTML=country;
     }
-        
-    //clear fields
-    document.getElementById("firstname").value="";
-    document.getElementById("lastname").value="";
-    document.getElementById("phone").value="";
-    document.getElementById("email").value="";
-    
 }
