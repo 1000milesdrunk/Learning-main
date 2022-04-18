@@ -6,13 +6,12 @@ header,footer,aside{
     display:block;
 }
 .container{
-    width:1000px;
+    width:1200px;
     margin:0 auto;
     /* float:left; */
 }
 .headerbar{
-    width:1000px;
-    /* background: #033;  */
+    width:1200px;
     float:left;
 }
 h1{
@@ -48,13 +47,13 @@ label{
     min-height:60px;
 }
 .leftbar{
-    width:500px;
+    width:600px;
     background:#099;
     min-height: 600px;
     float:left;
 }
 .rightbar{
-    width:500px;
+    width:600px;
     background:#ccf;
     min-height: 600px;
     float:left;

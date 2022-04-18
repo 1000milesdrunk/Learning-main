@@ -31,20 +31,20 @@
                 <fieldset>
                     <label for="country">Country</label>
                     <select name="" id="country">
-                        <option value="">India</option>
-                        <option value="">America</option>
-                        <option value="">Africa</option>
-                        <option value="">Other</option>
+                        <option value="India">India</option>
+                        <option value="America">America</option>
+                        <option value="Africa">Africa</option>
+                        <option value="Other">Other</option>
                     </select>
                 </fieldset>
                 <fieldset>
                     <label for="submit">&nbsp;</label>
-                    <button id="submit">Register</button>
+                    <button id="submit" onclick="onRegisterPressed()">Register</button>
                 </fieldset>
             </div> 
         </aside>    
         <aside class="rightbar">
-            <table>
+            <table id="regtable">
                 <thead>
                     <tr>
                         <th>First Name</th>
