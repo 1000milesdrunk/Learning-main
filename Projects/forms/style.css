@@ -1,5 +1,6 @@
 body{
     margin:0;
+    font-family: sans-serif;
 }
 header,footer,aside{
     display:block;
@@ -21,6 +22,19 @@ h1{
 input{
     width:200px;
 }
+table{
+    width:420px;
+    border-collapse: collapse;
+    margin: 20px;
+}
+th{
+    background:orange; 
+}
+th,td{
+    border:2px solid black;
+    padding:10px;
+}
+
 label{
     display:block;
     width:450px;
@@ -28,12 +42,10 @@ label{
 .headerbar.top{
     background:#033;
     min-height: 100px;
-    /* float:left; */
 }
 .headerbar.bottom{
     background:#330;
     min-height:60px;
-    /* float:left; */
 }
 .leftbar{
     width:500px;
@@ -46,4 +58,5 @@ label{
     background:#ccf;
     min-height: 600px;
     float:left;
+    text-align: center;
 }
