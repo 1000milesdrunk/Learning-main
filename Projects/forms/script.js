@@ -1,8 +1,37 @@
 var userArray = [];
 var selectedIndex=-1;
 
-function formDataCheck(){
-    if((document.getElementById("firstname").value==="")||(document.getElementById("lastname").value==="")||(document.getElementById("phone").value==="")||(document.getElementById("email").value==="")||(document.getElementById("age").value==="")||(document.getElementById("country").value===""))
+const form= document.getElementById("form");
+const firstName=document.getElementById("firstname");
+const lastName=document.getElementById("lastname");
+const phone=document.getElementById("phone");
+const email=document.getElementById("email");
+const age=document.getElementById("age");
+const country=document.getElementById("country");
+
+form.addEventListener('submit',(e)=>{
+    e.preventDefault();
+
+    checkInputs();
+})
+
+function checkInputs(){
+    const firstNameValue=firstName.value.trim();
+    const lastNameValue=lastName.value.trim();
+    const phoneValue = phone.value.trim();
+    const emailValue=email.value.trim();
+    const ageValue= age.value.trim();
+    const countryValue=country.value.trim();
+
+    if(firstNameValue===''){
+        setErrorFor(firstName, 'First name cannot be blank');
+    }
+    else{
+
+    }
+}
+
+functionf((document.getElementById("firstname").value==="")||(document.getElementById("lastname").value==="")||(document.getElementById("phone").value==="")||(document.getElementById("email").value==="")||(document.getElementById("age").value==="")||(document.getElementById("country").value===""))
     {
         
     }
