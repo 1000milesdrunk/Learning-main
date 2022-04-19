@@ -27,15 +27,15 @@ function checkInputs(){
         setErrorFor(firstName, 'First name cannot be blank');
     }
     else{
-
+        setSucessFor(firstName);
     }
 }
 
-functionf((document.getElementById("firstname").value==="")||(document.getElementById("lastname").value==="")||(document.getElementById("phone").value==="")||(document.getElementById("email").value==="")||(document.getElementById("age").value==="")||(document.getElementById("country").value===""))
-    {
-        
-    }
+function setErrorFor(){
+    
 }
+
+
 
 function onRegisterPressed()
 {
