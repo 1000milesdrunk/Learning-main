@@ -1,15 +1,40 @@
 <html>
 
 <head>
-    <title>Login</title>
+    <title>User Details</title>
 </head>
 
 <body>
-    <form>
-        Username:<input type="text" id="username" name="username"><br />
-        Password:<input type="text" id="password" name="password"><br />
-        <button type="button" onclick="valid()">Login</button>
-    </form>
+    <fieldset>
+        <legend>User Details</legend>
+        <form id="inputForm" method="post">
+            Name: <input type="text" name="name" /><br />
+            Age: <input type="text" name="age" /><br />
+            Email: <input type="text" name="email" /><br />
+            Phone: <input type="text" name="phone" /><br />
+            <button type="button" onclick="submitForm()">Add</button>
+            <button type="button" onclick="table()">Back</button>
+        </form>
+    </fieldset>
+    <script>
+        function addUser() {
+            let formData = document.getElementById("inputForm");
+            console.log(formData)
+            let userDetails = formData.querySelectorAll("input");
+            console.log(userDetails);
+            for (let i = 0; i < userDetails.length; i++) {
+                if (userDetails[0].value == "") {
+                    document.getElementsByName("name").classList.add("error");
+                }
+            }
+            let name = userDetails[0].value;
+            let age = userDetails[1].value;
+            let email = userDetails[2].value;
+            let phone = userDetails[3].value;
+
+            $.post("addUser", { name: name, age: age, email: email, phone: phone }, function (response) { $("body").html(response) });
+        }
+    </script>
 </body>
 
 </html>

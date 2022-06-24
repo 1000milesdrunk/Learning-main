@@ -1,0 +1,24 @@
+<html>
+<head><title>User Details</title></head>
+<body>
+<h2>Welcome ${userName}</h2>
+ <table class="datatable" border="1px solid black">
+  	<tr>
+  		<th>Name</th>  
+  		<th>Age</th>
+  		<th>Email</th>
+  		<th>Phone</th>
+  	</tr>
+    <#list model["user"] as user>
+  	<tr>
+  		<td>${user.name}</td> 
+  		<td>${user.age}</td>
+  		<td>${user.email}</td>
+  		<td>${user.phone}</td>
+  	</tr>
+    </#list>
+  </table>
+  <button type="button" onclick="createForm()">Add User</button>
+  <button type="button" onclick="logout()">Logout</button>
+  </body>
+  </html>
